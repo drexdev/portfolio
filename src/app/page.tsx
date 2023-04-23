@@ -1,14 +1,15 @@
 'use client';
+
 import { Nav } from '@/components/Layout';
 import { useState } from 'react';
 
 export default function Home() {
-	const [ load, setLoad ] = useState('false');
-  
+	const [ data, setData ] = useState('teste');
+
 	return (
-		<>
+		<> 
 			<Nav />
-			<h3>{load}</h3>
+			<h1>${data}</h1>
 		</>
 	);
 }
