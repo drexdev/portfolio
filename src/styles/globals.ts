@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         --color-box-primary-text: ${theme.colors.box.primary.textColor};
         --color-box-secondary: ${theme.colors.box.secondary.background};
         --color-box-secondary-text: ${theme.colors.box.secondary.textColor};
-        --color-text-defailt: ${theme.colors.text.default};
+        --color-text-default: ${theme.colors.text.default};
         
         --font-size-subtitle-big: ${theme.font.size.subTitle.big};
         --font-size-title-big: ${theme.font.size.title.big};
@@ -33,8 +33,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${theme.colors.background};
-        color: ${theme.colors.text.default};
+        background-color: var(--color-background);
+        color: var(--color-text-default);
     }
 
     a {

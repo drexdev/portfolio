@@ -18,10 +18,21 @@ export const LogoContainer = styled(Link)`
     gap: 15px;
     user-select: none;
 
+    img { background-color: var(--color-background); }
+    
+    img:hover ~ span {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
     span {
         font-weight: 700;
         font-size: 25px;
         letter-spacing: -1px;
+
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+        z-index: -1;
     }
 `;

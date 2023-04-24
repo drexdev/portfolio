@@ -1,15 +1,12 @@
 'use client';
 
 import { Nav } from '@/components/Layout';
-import { useState } from 'react';
+import { Fragment } from 'react';
 
 export default function Home() {
-	const [ data, setData ] = useState('teste');
-
 	return (
-		<> 
+		<Fragment>
 			<Nav />
-			<h1>${data}</h1>
-		</>
+		</Fragment>
 	);
 }

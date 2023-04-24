@@ -1,3 +1,4 @@
+import Dot from '@/components/UI/DotMouse';
 import StyledComponentsRegistry from '@/lib/registry';
 import { GlobalStyle } from '@/styles/globals';
 import { Montserrat } from 'next/font/google';
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={font.className}>
 				<StyledComponentsRegistry>
 					<GlobalStyle />
+					<Dot />
 					
 					{children}
 				</StyledComponentsRegistry>
